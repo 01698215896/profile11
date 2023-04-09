@@ -232,7 +232,7 @@ a {
     margin: 50px 0;
 }
 #skill{
-  padding-top: 200px;
+  padding-top: 100px;
 }
 .skill_listItem{
   width: 100%;
@@ -282,7 +282,7 @@ a {
 }
 
 #profolio{
-  padding-top: 130px;
+  padding-top: 100px;
 }
 .profolio_listItem{
   text-align: center;
@@ -338,11 +338,12 @@ a {
   width: 48%;
 }
 #feedback{
-  margin-top: 100px;
+  padding-top: 100px;
 }
 .feedback_list{
   overflow: hidden;
   height: 320px;
+  position: relative;
 }
 .feedback_listItem{
   border: 1px solid var(--boder);
@@ -350,7 +351,14 @@ a {
   padding: 30px;
   width: 100%;
   height: 100%;
+  transform: translateX(-320%);
+  transition: transform 1s ease-in-out;
+  position: absolute;
 }
+.feedback_listItem.active {
+  transform: translateX(0);
+}
+
 .feedback_listItem-img-name{
   display: flex;
   align-items: center;
@@ -467,5 +475,9 @@ span.cl{
   }
   .feedback_listItem-content p{
     font-size: 16px;
+  }
+  .profolio_img-link a{
+    font-size: 16px;
+    padding: 5px 10px;
   }
 }
