@@ -338,7 +338,7 @@ a {
   width: 48%;
 }
 #feedback{
-  padding-top: 100px;
+  padding: 100px 0;
 }
 .feedback_list{
   overflow: hidden;
